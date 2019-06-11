@@ -1,10 +1,11 @@
-# grandma = "deaf"
-
-speak_to_grandma = "answer"
-if "answer" == downcase
-puts "HUH?! SPEAK UP, SONNY!"
-elsif "answer" == upcase
-  puts "NO, NOT SINCE 1938!"
-elsif "answer" == "I LOVE YOU GRANDMA!"
-  puts "I LOVE YOU TOO PUMPKIN!"
+def speak_to_grandma(phrase)
+  if phrase == 'I LOVE YOU GRANDMA!'
+    return 'I LOVE YOU TOO PUMPKIN!'
+  end
+  if phrase != phrase.upcase()
+    return "HUH?! SPEAK UP, SONNY!"
+  else
+    return "NO, NOT SINCE 1938!"
+  end
 end
+# grandma = "deaf"
